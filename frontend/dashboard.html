@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="dashboard-header">
+      <h1>Welcome to Your Dashboard</h1>
+      <button id="logoutBtn" class="logout-button">🚪 Logout</button>
+    </div>
+
+    <p id="userInfo">Logged in as <strong>Loading...</strong></p>
+
+    <div class="attendance-buttons">
+      <button onclick="markAttendance('Present')">✅ Present</button>
+      <button onclick="markAttendance('Absent')">❌ Absent</button>
+    </div>
+
+    <h2>Your Attendance History</h2>
+    <ul id="attendanceList"></ul>
+    <p id="message"></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
